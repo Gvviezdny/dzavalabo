@@ -8,6 +8,7 @@ public class Human extends Animal {
     Animal pet;
     Car car;
     Public Double cash;
+    Public Phone phone
 
     Human() {
         this.salary = 1200.0;
