@@ -3,10 +3,12 @@ package com.company;
 import device.Device;
 
 public class Car extends Device {
-    String producer;
-    String model;
-    Double millage;
-    Double engineSize;
+   public String producer;
+    public String model;
+    public Double millage;
+    public Double engineSize;
+    public Double value;
+    public String plates;
     Integer yearOfProduction;
     String color;
 }
