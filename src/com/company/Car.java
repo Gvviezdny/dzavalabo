@@ -18,14 +18,19 @@ public class Car extends Device {
         this.producer = producer1;
 
         public boolean equals (Car Car){
-            if (this == car)
+            if (this == car) {
                 return true;
-            else if (this.producer.equals(car.producer)
-                && this.model.equals(car.model)
-                && this.millage.equals(car.millage)
-                && this.plates.equals(car.plates)) {
+            } else if (this.producer.equals(car.producer)
+                    && this.model.equals(car.model)
+                    && this.millage.equals(car.millage)
+                    && this.plates.equals(car.plates)) {
                 return true;
+            } else {
+                return false;
             }
         }
+        public void turnOn() {
+            System.out.println("przekręcam kluczyk");
+        }
+
     }
-}
