@@ -2,7 +2,7 @@ package com.company;
 
 import device.Device;
 
-public class Car extends Device {
+public class Car extends Device implements Saleable {
     public String producer;
     public String model;
     public Double millage;
