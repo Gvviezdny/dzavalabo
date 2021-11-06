@@ -7,6 +7,7 @@ public class Human extends Animal {
     Double salary;
     Animal pet;
     Car car;
+    Public Double cash;
 
     Human() {
         this.salary = 1200.0;

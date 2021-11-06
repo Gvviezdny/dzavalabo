@@ -33,4 +33,21 @@ public class Car extends Device implements Saleable {
             System.out.println("przekręcam kluczyk");
         }
 
+        @Override
+        public void sale(Human seller, Human buyer, Double price);
+        if(buyer.cash) < price){
+            System.out.println("KUPUJĄCY MA ZA MAŁO KASY");
+        }else if (seller.getCar() =  null) {
+            System.out.println("SPRZEDAJĄCY NIE MA ŻADNEGO AUTA");
+        }else if (!seller.getCar().equals(this));
+            System.out.println("SPRZEDAJĄCY NIE MA TEGO KONKRETNEGO SAMOCHODU (ZŁODZIEJ)");
+            else
+                seller.cash += price;
+            buyer.cash -= price;
+            seller.car = null;
+            buyer.car = this;
+            System.out.println("transackja się udała, kupiono" + this);
+        //sprawdzenie czy kupujacy ma hajs
+        //sprawdzenie czy sprzedajacy ma samochod
+        //itp
     }
