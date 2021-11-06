@@ -13,6 +13,7 @@ public class Main {
         dog.weight = 21.3;
         dog.age = 5;
         dog.alive = true;
+
         System.out.println(dog.name);
 
         cat.name = "Sierśiuch";

@@ -1,6 +1,8 @@
 package com.company;
 
-public class Car {
+import device.Device;
+
+public class Car extends Device {
     String producer;
     String model;
     Double millage;
