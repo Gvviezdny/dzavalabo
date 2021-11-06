@@ -6,7 +6,7 @@ public class Animal {
     String name;
     Double weight;
     Integer age;
-    Boolean alive = true;
+    Boolean alive;
     Boolean feed;
     Integer takeForAWalk;
 
@@ -21,6 +21,17 @@ public class Animal {
             this.weight = 1.0;
 
 
+        }
+    }
+    void introduceYourself() {
+        System.out.println("I'm " + this.name);
+    }
+
+    void doYouLike(String foodType) {
+        if (this.species == "felis" && foodType == "mouse") {
+            System.out.println("yes, I like " + foodType);
+        } else {
+            System.out.println("no you idiot ");
         }
     }
 
@@ -42,17 +53,9 @@ public class Animal {
 
     }
 
-    void introduceYourself() {
-        System.out.println("I'm " + this.name);
-    }
 
-    void doYouLike(String foodType) {
-        if (this.species == "felis" && foodType == "mouse") {
-            System.out.println("yes, I like " + foodType);
-        } else {
-            System.out.println("no you idiot ");
-        }
-    }
+
+
 
     Integer getHumanAge() {
         if (this.species == "canis") {
