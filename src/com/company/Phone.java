@@ -4,9 +4,9 @@ import device.Device;
 
 public class Phone extends Device {
     String model;
-    String producent;
+    String producer;
     Double screenSize;
     String os;
-    Double yearofProduction;
+    Integer yearofProduction;
 
 }
