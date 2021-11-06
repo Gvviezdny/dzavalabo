@@ -16,5 +16,16 @@ public class Car extends Device {
     public Car(String producer, String model, Integer yearOfProduction, String producer1) {
         super(producer, model, yearOfProduction);
         this.producer = producer1;
+
+        public boolean equals (Car Car){
+            if (this == car)
+                return true;
+            else if (this.producer.equals(car.producer)
+                && this.model.equals(car.model)
+                && this.millage.equals(car.millage)
+                && this.plates.equals(car.plates)) {
+                return true;
+            }
+        }
     }
 }
